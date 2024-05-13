@@ -8,6 +8,15 @@ export default class FormaPagamento extends BaseModel {
   @column()
   declare nome: string
 
+  @column()
+  declare produtoID: number
+
+  @column()
+  declare comandaId: number
+
+  @column()
+  declare quantidade: number
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
